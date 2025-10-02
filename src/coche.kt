@@ -4,7 +4,7 @@ abstract class coche (abstract var length: Int = 100,abstract  var width: Int = 
         set(value) {
             height=value
         }
-        abstract val consuo: Double
+        abstract val consumo: Double
 
     fun printSize() {
         println("Width: $width cm " +
