@@ -1,9 +1,10 @@
-class coche (var length: Int = 100, var width: Int = 20, var height: Int = 40){
-    var volume: Int
+abstract class coche (abstract var length: Int = 100,abstract  var width: Int = 20,abstract  var height: Int = 40){
+    abstract  var volume: Int
         get() = width + height + length
         set(value) {
             height=value
         }
+        abstract val consuo: Double
 
     fun printSize() {
         println("Width: $width cm " +
