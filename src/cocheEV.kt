@@ -1,3 +1,3 @@
-class cocheEV: coche() {
-    override val consumo = 0.0
+class cocheEV (override var height: Int): coche(height = height) {
+    override var consumo = 0.0
 }
