@@ -1,11 +1,4 @@
 package practica3
 
-fun main(){
-
-
-
-
-
-
-
+class Amno {
 }
