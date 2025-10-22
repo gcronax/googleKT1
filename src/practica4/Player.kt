@@ -1,15 +1,13 @@
 package practica4
 
-import practica3.IPickable
-
 class Player (var MaxStrength: Int,var Slots: Int){
     var BackPack: MutableList<IPickable> = mutableListOf()
 //    init {
 //        println("Player: $Name, MaxStrength: $MaxStrength")
 //    }
 
-    fun CurrentLoad(): Int {
-        var pesoTotal: Int=0
+    fun CurrentLoad(): Double {
+        var pesoTotal: Double=0.0
         BackPack.forEach { pesoTotal += it.Weight }
 
         return pesoTotal
@@ -36,7 +34,7 @@ class Player (var MaxStrength: Int,var Slots: Int){
     fun ListBackpack(){
         print("Backpack: ")
         BackPack.forEach {
-            print("${it.Name} ")
+            print(it)
         }
         println()
     }

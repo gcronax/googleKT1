@@ -1,8 +1,5 @@
 package practica4
 
-interface IWeapon {
-    val Name: String
-    var Weight: Double
+interface IWeapon: IPickable{
     var Damage: Double
-    var Slots: Int
 }
