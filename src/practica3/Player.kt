@@ -25,6 +25,7 @@ package practica3
 
     }
 
+
     fun TryAdd(pickable: IPickable){
         println("Added ${pickable.Name} (+${pickable.Weight})." +
                 " Current load: ${pickable.Weight+CurrentLoad()}/$MaxStrength")
